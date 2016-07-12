@@ -1,0 +1,212 @@
+/*============================================================================================================================*/
+.header {
+  width: 100%;
+  background-color: #ffcb52;
+  -webkit-box-shadow: 0 2px 2px 0 #333333;
+  box-shadow: 0 2px 2px 0 #333333;
+}
+.nav-open .main-panel {
+  margin-left: 220px;
+}
+.nav-open .nav-panel {
+  float: left;
+}
+.nav-closed .main-panel {
+  margin-left: 6px;
+}
+.nav-closed .nav-panel {
+  left: -214px;
+  margin: 0 ;
+}
+.nav-closed .nav-panel:hover {
+  left: 0;
+  margin: 0 ;
+  z-index: 1102 ;
+}
+.fixed-header .body-container {
+  padding-top: 54px;
+  padding-left: 44px;
+  padding-right: 44px;
+}
+.fixed-header .nav-panel {
+  position: fixed;
+  z-index: 780;
+}
+.fixed-header .header {
+  position: fixed;
+  z-index: 780;
+}
+.header {
+  height: 44px;
+}
+.header {
+  /*background: transparent url("@{componentsPath}/brandkit/img/ge-monogram-athensgray.svg") no-repeat;*/
+}
+.header .gt-badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 2px 5px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #777;
+  border-radius: 5px;
+}
+.header li .gt-badge {
+  margin-left: 3px;
+}
+.header .gt-badge :empty {
+  display: none;
+}
+.header .badge-xs {
+  top: 0;
+  padding: 1px 5px;
+}
+.header .badge-green {
+  background-color: #33cc33;
+}
+.header .badge-pink {
+  background-color: #f20b7f;
+}
+.header .badge-red {
+  background-color: #ee3324;
+}
+.header .badge-blue {
+  background-color: #1ca5cf;
+}
+.header a.badge:hover,
+.header a.badge:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header .header-container {
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f;
+  position: relative;
+  margin: 0 auto;
+}
+.header .header-container .logo {
+  width: 44px;
+  height: 44px;
+  background: #2b2b2b url("../img/hs-logo.png") no-repeat;
+  float: left;
+}
+.header .header-container .gt-breadcrumb {
+  float: left;
+  color: #b6abb0;
+  font-size: 14px;
+  line-height: 44px;
+  margin-left: 10px;
+}
+.header .header-container .gt-breadcrumb i {
+  font-size: 11px;
+  margin: 0px 2px 0px 2px;
+  color: #be1c6d;
+}
+.header .header-container .gt-user-drop {
+  width: 172px;
+  height: 44px;
+  background: #d7d7d7;
+  float: right;
+  color: #d7d7d7;
+  font-size: 12px;
+  cursor: pointer;
+}
+.header .header-container .gt-user-drop-toggle {
+  width: 172px;
+  height: 44px;
+  background: #4c4c4f;
+}
+.header .header-container .gt-user-drop:hover {
+  background: #0d0d0d;
+}
+.header .header-container .gt-user-drop i {
+  font-size: 14px;
+  line-height: 44px;
+  margin-left: 5px;
+  color: #d7d7d7;
+}
+.header .header-container .gt-user-drop .gt-display-name {
+  line-height: 13px;
+  margin-top: 9px;
+  margin-left: 10px;
+  text-align: right;
+}
+.header .header-container .gt-user-drop .gt-display-name span {
+  color: #edeeef;
+}
+.header .header-container .gt-user-drop .gt-avatar img {
+  height: 44px;
+  background-color: #000000;
+}
+.header .header-container .gt-header-search {
+  height: 44px;
+  width: 44px;
+  border-right: 1px solid #0d0d0d;
+  border-left: 1px solid #0d0d0d;
+  text-align: center;
+  cursor: pointer;
+}
+.header .header-container .gt-header-search:hover {
+  background-color: #2b2b2b;
+}
+.header .header-container .gt-header-search i {
+  font-size: 16px;
+  line-height: 44px;
+  color: #d7d7d7;
+}
+.header .header-container .gt-header-nav {
+  margin: 0 10px 0 10px;
+  padding: 0;
+}
+.header .header-container .gt-header-nav li {
+  display: inline-block;
+  list-style: none;
+  line-height: 44px;
+  color: #d7d7d7;
+  margin-left: 15px;
+  height: 44px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+.header .header-container .gt-header-nav li a {
+  color: #d7d7d7;
+  text-decoration: none;
+}
+.header .header-container .gt-header-nav li a:hover {
+  color: #29c7f7;
+}
+.header .header-container .gt-header-nav li:hover {
+  border-bottom: 2px solid #29c7f7;
+}
+.header .header-container .gt-header-nav li.active {
+  border-bottom: 2px solid #29c7f7;
+}
+.header .header-container .gt-header-nav li.active a {
+  color: #29c7f7;
+}
+.header .gt-global-search {
+  position: relative;
+}
+.header .gt-global-search .search-box {
+  width: 400px;
+  height: 44px;
+  position: absolute;
+  top: 0px;
+  right: 44px;
+  background-color: #000000;
+  padding: 0px 10px 0px 10px;
+}
+.header .gt-global-search .search-box .input-group {
+  line-height: 44px;
+}
+.header .gt-global-search .search-box .input-group input {
+  margin-top: 7px;
+}

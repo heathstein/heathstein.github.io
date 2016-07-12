@@ -1,0 +1,36 @@
+<div class="card">
+    <div (click)="addSuperhero()" class="btn btn-xs btn-default" style="margin-bottom:5px"> Add Superhero</div>
+    <div *ngIf="loading">loading...</div>
+    <table class="table table-responsive table-striped" >
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Powers</th>
+            <th>Age</th>
+            <th>Height</th>
+            <th>Weight</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let hero of heros">
+            <td>{{ hero.id }}</td>
+            <td>{{ hero.name }}</td>
+            <td>{{ hero.powers }}</td>
+            <td>{{ hero.age }}</td>
+            <td>{{ hero.height }}</td>
+            <td>{{ hero.weight }}</td>
+            <td style="cursor:pointer;" (click)="editSuperhero(hero.id)"><a> edit</a></td>
+            <td style="cursor:pointer;" (click)="removeHero(hero)"><a> delete</a></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>Basic Request</h2>
+    <button type="button"  (click)="makeRequest()">Make Request</button>
+    <div *ngIf="loading">loading...</div>
+    <pre>{{heros | json}}</pre>
+
+</div>`

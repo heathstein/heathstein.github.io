@@ -1,0 +1,117 @@
+.dropdown-menu li {
+  font-size: 11px;
+}
+.dropdown-menu li.divider {
+  margin: 1px 0 1px 0;
+}
+.gt-tab-container {
+  height: 30px;
+  background-color: #dddddd;
+  width: 100%;
+  border-bottom: 1px solid #938686;
+  font-family: arial, sans-serif;
+  font-size: 12px;
+}
+.gt-tab-container > li {
+  float: left;
+  line-height: 30px;
+  border-right: 1px solid #938686;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 29px;
+  color: #938686;
+  list-style: none;
+  cursor: pointer;
+}
+.gt-tab-container > li li {
+  font-size: 11px;
+}
+.gt-tab-container > li li.divider {
+  margin: 1px 0 1px 0;
+}
+.gt-tab-container > li i {
+  margin-left: 5px;
+}
+.gt-tab-container > li.menu {
+  color: #0d0d0d;
+  font-size: 14px;
+  padding: 0px 3px 0 3px;
+}
+.gt-tab-container > li.menu i {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.gt-tab-container > li:hover,
+.gt-tab-container li.active {
+  background-color: #fff;
+  color: #0d0d0d;
+}
+.gt-tab-container i.cached {
+  color: #ee3324;
+}
+.voice-brand {
+  font-family: arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.voice-data {
+  font-family: Inconsolata, Consolas, monospace;
+}
+.voice-human {
+  font-family: arial, Georgia, serif;
+}
+.voice-ui {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.color-black {
+  color: #13161a;
+}
+.color-green {
+  color: #33cc33;
+}
+.color-cyan {
+  color: #08a5e1;
+}
+.color-orange {
+  color: #ed8000;
+}
+.color-red {
+  color: #ee3324;
+}
+.color-purple {
+  color: #711371;
+}
+.color-white {
+  color: #fff;
+}
+.color-background-black {
+  background-color: #13161a !important;
+}
+.color-background-gray-dark {
+  background-color: #4c4f4f !important;
+}
+.color-background-gray {
+  background-color: #2b2b2b !important;
+}
+.color-background-gray-lighter {
+  background-color: #d7d7d7 !important;
+}
+.color-background-green {
+  background-color: #33cc33 !important;
+}
+.color-background-cyan {
+  background-color: #08a5e1 !important;
+}
+.color-background-orange {
+  background-color: #ed8000 !important;
+}
+.color-background-red {
+  background-color: #ee3324 !important;
+}
+.color-background-red-light {
+  background-color: #f5857c !important;
+}
+.color-background-purple {
+  background-color: #711371 !important;
+}
+.color-background-white {
+  background-color: #fff !important;
+}

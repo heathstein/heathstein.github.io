@@ -1,0 +1,29 @@
+
+<div  class="header">
+    <div class="header-container">
+        <div class="logo"></div>
+        <div class="gt-breadcrumb">AngularJs 2.0 <i class="fa fa-chevron-right"></i>Playground <i class="fa fa-chevron-right"></i> Test</div>
+
+        <div class="gt-user-drop btn-group" uib-dropdown  >
+            <div class="gt-user-drop-toggle" id="gt-user-drop" uib-dropdown-toggle>
+                <i class="pull-left fa fa-chevron-down "></i>
+                <div class="pull-left gt-display-name"> <span>Test User 2312</span> <br /><span>admin</span> </div>
+                <div class="gt-avatar pull-right"><img src="assets/img/contact-outline.png"> </div>
+            </div>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="gt-user-drop">
+                <li role="menuitem"><a href="logout">Log Out</a></li>
+                <li role="menuitem"><a  ui-sref="settings" >Lock Screen</a></li>
+                <li role="menuitem"><a ui-sref="settings">My Settings</a></li>
+                <li class="divider"></li>
+                <li role="menuitem"><a ui-sref="admin.system-settings">Admin Settings</a></li>
+            </ul>
+        </div>
+
+
+        <div class="pull-right gt-global-search" click-out="hide()" gt-global-search></div>
+
+        <navigation></navigation>
+
+
+    </div>
+</div>

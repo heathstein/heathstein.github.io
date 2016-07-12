@@ -1,0 +1,321 @@
+@import "variables.less";
+
+
+
+/*============================================================================================================================*/
+
+.mainContainer{
+
+}
+
+.header{
+  width:100%;
+  background-color: #ffcb52;
+  -webkit-box-shadow: 0 2px 2px 0 #333333;
+  box-shadow: 0 2px 2px 0 #333333;
+}
+
+
+
+.nav-open{
+  .main-panel{
+    margin-left:@navPanelWidth;
+  }
+
+  .nav-panel{
+    float:left;
+  }
+}
+
+ .nav-closed{
+
+   .main-panel{
+    margin-left:@navPanelClosedNegWidth;
+    }
+
+  .nav-panel{
+     left: -@navPanelClosedWidth;
+     margin:0 ;
+  }
+
+  .nav-panel:hover{
+    left: 0;
+    margin:0 ;
+    z-index:1102 ;
+  }
+
+}
+
+
+
+.fixed-header{
+
+  .body-container{
+    padding-top:54px;
+    padding-left:@headerHeight;
+    padding-right:@headerHeight;
+  }
+
+  .main-panel{
+
+  }
+
+  .nav-panel{
+    position:fixed;
+    z-index:@zindexHeader;
+  }
+
+  .header{
+    position:fixed;
+    z-index:@zindexHeader;
+  }
+
+}
+
+.header{
+  height:@headerHeight;
+
+}
+
+
+.header{
+  .gt-badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 2px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #777;
+    border-radius: 5px;
+
+  }
+
+  li .gt-badge{
+    margin-left:3px;
+  }
+
+  .gt-badge :empty {
+    display: none;
+  }
+
+  .badge-xs {
+    top: 0;
+    padding: 1px 5px;
+  }
+
+  .badge-green {
+    background-color: @green;
+
+  }
+
+  .badge-pink {
+    background-color: @pink;
+  }
+
+  .badge-red {
+    background-color: @red;
+  }
+
+  .badge-blue {
+    background-color: @blue;
+  }
+
+  a.badge:hover,
+
+  a.badge:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  .header-container{
+    width:100%;
+    height:100%;
+    background-color: @grayDarker;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .header-container{
+    .logo{
+      width:44px;
+      height:@headerHeight;
+      background: @gray url("@{imagesPath}/hs-logo.png")  no-repeat;
+      float:left;
+    }
+
+    .gt-breadcrumb{
+      float:left;
+      color:#b6abb0;
+      font-size:@fontSizeLarge;
+      line-height:@headerHeight;
+      margin-left:10px;
+
+      i{
+        font-size:11px;
+        margin:0px 2px 0px 2px;
+        color:@pinkDark;
+      }
+
+
+    }
+
+
+
+
+    .gt-user-drop{
+      width:172px;
+      height:@headerHeight;
+      background: @grayLighter;
+      float:right;
+      color:@grayLighter;
+      font-size:12px;
+      cursor:pointer;
+    }
+
+    .gt-user-drop-toggle{
+      width:172px;
+      height:@headerHeight;
+      background: #4c4c4f;
+    }
+
+
+    .gt-user-drop:hover{
+      background: @grayDarkest;
+    }
+
+
+
+    .gt-user-drop{
+      i{font-size:14px;
+        line-height:@headerHeight;
+        margin-left:5px;
+        color:@grayLighter;
+      }
+
+      .gt-display-name{
+        line-height:13px;
+        margin-top:9px;
+        margin-left:10px;
+        text-align: right;
+
+      }
+
+      .gt-display-name span{
+        color:@grayLightest;
+
+      }
+
+      .gt-avatar img{
+        height:@headerHeight;
+        background-color:#000000;
+
+      }
+    }
+
+
+    .gt-header-search{
+      height:@headerHeight;
+      width:44px;
+      border-right:1px solid @grayDarkest;
+      border-left:1px solid @grayDarkest;
+      text-align:center;
+      cursor:pointer;
+    }
+
+    .gt-header-search:hover{
+      background-color:@gray;
+    }
+
+    .gt-header-search i{
+      font-size:16px;
+      line-height:@headerHeight;
+      color:@grayLighter;
+
+    }
+
+    .gt-header-nav{
+      margin:0 10px 0 10px;
+      padding:0;
+
+    }
+
+    .gt-header-nav{
+
+      li{
+        display:inline-block;
+        list-style:none;
+        line-height:@headerHeight;
+        color:@grayLighter;
+        margin-left:15px;
+        height:@headerHeight;
+        cursor:pointer;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size:12px;
+
+      }
+
+      li a{
+        color:@grayLighter;
+        text-decoration:none;
+      }
+
+      li a:hover{
+        color:@blueLight;
+      }
+
+      li:hover{
+        border-bottom:2px solid  @blueLight;
+      }
+
+      li.active{
+        border-bottom:2px solid  @blueLight;
+      }
+
+      li.active a{
+        color:@blueLight;
+      }
+
+
+    }
+
+  }
+
+
+
+  .gt-global-search {
+    position: relative;
+
+    .search-box {
+      width: 400px;
+      height:@headerHeight;
+      position: absolute;
+      top: 0px;
+      right:@headerHeight;
+      background-color: #000000;
+      padding:0px 10px 0px 10px;
+
+    }
+
+    .search-box .input-group {
+      line-height:44px;
+    }
+
+    .search-box .input-group input {
+     margin-top:7px;
+    }
+
+
+
+  }
+  /*background: transparent url("@{componentsPath}/brandkit/img/ge-monogram-athensgray.svg") no-repeat;*/
+
+
+}
+

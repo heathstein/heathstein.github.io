@@ -1,0 +1,173 @@
+.btn-default {
+  background-color: #fb1470 ;
+}
+label {
+  font-size: 12px;
+  font-weight: normal ;
+}
+.panel-primary .panel-heading {
+  background-color: #fb1470 !important;
+  border-bottom: 1px solid #000000 !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.panel-primary {
+  border: 1px solid #000000 !important;
+}
+.btn-default {
+  background-color: #d7d7d7;
+}
+.btn-primary {
+  background-color: #29c7f7;
+}
+.btn-success {
+  background-color: #33cc33;
+}
+.btn-info {
+  background-color: #1ca5cf;
+}
+.btn-warning {
+  background-color: #ed8000;
+}
+.btn-danger {
+  background-color: #ee3324;
+}
+.btn-link {
+  background-color: #29c7f7;
+}
+.alert {
+  margin-top: 20px;
+}
+hr {
+  margin-top: 10px  !important;
+  margin-bottom: 5px  !important;
+}
+.modal-lg {
+  width: 98% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 10px !important;
+}
+.modal-dialog {
+  -moz-border-radius: 5px 5px 5px 5px !important;
+  -webkit-border-radius: 5px 5px 5px 5px !important;
+  border-radius: 5px 5px 5px 5px !important;
+}
+.modal-content {
+  -moz-border-radius: 6px 6px 6px 6px !important;
+  -webkit-border-radius: 6px 6px 6px 6px !important;
+  border-radius: 6px 6px 6px 6px !important;
+}
+.modal-header {
+  border-radius: none !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  padding-left: 12px !important;
+  padding-righgt: 12px !important;
+  background-color: #1ca5cf;
+  color: #ffffff;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  height: 38px;
+  -webkit-box-shadow: inset 0 -2px 2px 0 #1f6e86;
+  box-shadow: inset 0 -2px 2px 0 #1f6e86;
+  border-bottom: none !important;
+}
+.modal-header i {
+  color: #ffffff !important;
+}
+.modal-danger .modal-header {
+  background-color: #ee3324;
+  -webkit-box-shadow: inset 0 -2px 2px 0 #8a1e15;
+  box-shadow: inset 0 -2px 2px 0 #8a1e15;
+}
+.modal-info .modal-header {
+  background-color: #1ca5cf;
+  -webkit-box-shadow: inset 0 -2px 2px 0 #1f6e86;
+  box-shadow: inset 0 -2px 2px 0 #1f6e86;
+}
+.modal-warning .modal-header {
+  background-color: #f4b366;
+  -webkit-box-shadow: inset 0 -2px 2px 0 #ed8000;
+  box-shadow: inset 0 -2px 2px 0 #ed8000;
+}
+.modal-success .modal-header {
+  background-color: #33cc33;
+  -webkit-box-shadow: inset 0 -2px 2px 0 #279d27;
+  box-shadow: inset 0 -2px 2px 0 #279d27;
+}
+.modal-title {
+  font-size: 18px !important;
+  line-height: 38px !important;
+  margin: 0 !important;
+}
+.modal-title i {
+  color: #000000;
+  cursor: pointer;
+  margin-top: 7px;
+}
+.modal-title i:hover {
+  color: #000000;
+}
+.col-md-btn {
+  width: 25px !important;
+  font-size: 22px !important;
+  padding-top: 10px !important;
+}
+/* UI SELECT OVERRIDE */
+.code-combo-box-key {
+  margin-bottom: 10px;
+  border: 1px solid #c0c0c0;
+  padding: 5px 0px 5px 10px;
+  background: #eeeeee;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.code-combo-box-key i {
+  margin-right: 5px;
+}
+.code-combo-box {
+  margin-bottom: 10px;
+  border: 1px solid #c0c0c0;
+  padding: 5px 0px 5px 10px;
+  background: #ffffff;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+}
+.code-combo-box .row {
+  margin-bottom: 10px;
+}
+.ui-select-container .btn-default[disabled] {
+  background-color: #eeeeee !important;
+  border-color: #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  opacity: 1;
+}
+.ui-select-container .btn-default {
+  background: #ffffff!important;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.ui-select-container .form-control {
+  line-height: 30px;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-white {
+  background-color: #fff;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.ui-select {
+  background-color: #ffffff !important;
+}

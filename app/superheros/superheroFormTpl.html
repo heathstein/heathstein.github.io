@@ -1,0 +1,36 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">{{title}}</div>
+    <div class="panel-body">
+        <!--- FORM --->
+        <form>
+            <div class="form-group">
+                <div *ngIf="hero" style="height:auto; overflow:hidden">
+                <label for="">Superhero Name</label>
+                <input type="text" [(ngModel)]="hero.name"   class="form-control">
+
+                <label for="">Superhero Powers</label>
+                <input type="text" [(ngModel)]="hero.powers"  class="form-control">
+
+                <label for="">Superhero Age</label>
+                <input type="text" [(ngModel)]="hero.age"  class="form-control">
+
+                <label for="">Superhero Height</label>
+                <input type="text" [(ngModel)]="hero.height"  class="form-control">
+
+                <label for="">Superhero Weight</label>
+                <input type="text" [(ngModel)]="hero.weight"  class="form-control">
+                <hr>
+
+                <div *ngIf="shouldDisplay('add')" class="btn btn-sm btn-info" (click)="addSuperHero()">Add Superhero</div>
+
+
+                    <div class="btn btn-sm btn-warning" (click)="goToSuperheros()">Cancel</div>
+
+
+                </div>
+
+            </div>
+        </form>
+        <!--- FROM --->
+    </div>
+</div>

@@ -1,0 +1,23 @@
+.tictactoe .tac-container {
+  width: 400px;
+  height: 400px;
+  background-color: #00ACED;
+  border: 2px solid #F8FFFF;
+}
+.tictactoe .tac-container div {
+  display: inline-block;
+  width: 132px;
+  height: 132px;
+  border: 3px solid #F8FFFF;
+  font-size: 50px;
+  vertical-align: middle;
+  padding: 0;
+  color: #ffffff;
+  text-align: center;
+}
+.tictactoe .tac-container div.active {
+  cursor: pointer;
+}
+.tictactoe .tac-container div.active:hover {
+  background-color: #0e97cb;
+}

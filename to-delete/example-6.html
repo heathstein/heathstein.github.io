@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Canvas Hacking</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='../base.css' rel='stylesheet' type='text/css' />
+	<link href='style.css' rel='stylesheet' type='text/css' />
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta property="og:image" content="images/screenshot.jpg" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<script src='../vendor/jquery-2.1.1.min.js'></script>
+	<script src='../vendor/Vector2.js'></script>
+	<script src="../vendor/stats.min.js"></script>
+	<script src="../Utils.js"></script>
+	
+</head>
+<body>
+	
+	<a class='start-stop' href='#'>Start/Stop</a>
+	<canvas id='example-canvas' width='600' height='400'></canvas>
+	
+	<script>
+	
+		var Scene = function() {
+
+			//This is the constructor which will load up the scene, an instance is created at the bottom of the page.
+	
+			this.ratio = window.devicePixelRatio >= 1 ? window.devicePixelRatio : 1; //Is this a retina display?
+			this.currTime = this.prevTime = new Date().getTime();	//Timing variables
+	
+			this.canvas = document.getElementById('example-canvas');
+			this.context = this.canvas.getContext( '2d' );
+			
+			this.dotManager = new DotManager(2000, this);
+			
+			//--------------------------------------------------------------
+			// Start the loop!
+
+			//Note that this is a little different from the post to add a start/stop button
+			this.started = false;
+			$('.start-stop').click(function() {
+				this.started = ! this.started;
+				
+				if(this.started) {
+					this.loop();
+				}
+
+				return false;
+			}.bind(this));
+			this.update( 16 ) //Draw Once
+	
+	
+		};
+		
+		Scene.prototype = {
+				
+			loop : function() {
+		
+				//this is the change in time in milliseconds
+				var dt;
+
+				if(! this.started ) return;
+
+				this.currTime = new Date().getTime();
+
+				dt = Math.min( this.currTime - this.prevTime, 100);
+
+				//Update then request a new animation frame
+				this.update( dt );
+				requestAnimationFrame( this.loop.bind(this) );
+		
+				this.prevTime = this.currTime;
+
+			},
+	
+			update : function( dt ) {
+		
+				//Clear the canvas
+				this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+		
+				//Start your update code here
+				this.dotManager.update( dt );
+		
+			}
+	
+		};
+		
+		function Dot( x, y, scene ) {
+		
+			var speed = 0.007;
+		
+			this.size = 4;
+			this.wavePosition = 0;
+			
+			this.position = new THREE.Vector2(x,y);
+			this.direction = new THREE.Vector2(
+				speed * Math.random() - speed / 2,
+				speed * Math.random() - speed / 2
+			);
+		
+			this.scene = scene;
+			this.color = Utils.hslToFillStyle(this.position.x / this.scene.canvas.width * 360, 50, 50, 0.5);
+		
+		}
+	
+		Dot.prototype = {
+
+			update : function( dt ) {
+				this.updatePosition( dt );
+				this.updateWave( dt );
+				this.draw( dt );
+			},
+		
+			updatePosition : function() {
+
+				//This is a little trick to create a variable outside of the render loop
+				//It's expensive to allocate memory inside of the loop.
+				//The variable is only accessible to the function below.
+
+				var moveDistance = new THREE.Vector2();
+
+				//This is the actual function
+				return function( dt ) {
+
+					moveDistance.copy( this.direction );
+					moveDistance.multiplyScalar( dt );
+
+					this.position.add( moveDistance );
+					
+					//Keep the dot on the screen
+					this.position.x = (this.position.x + this.scene.canvas.width) % this.scene.canvas.width;
+					this.position.y = (this.position.y + this.scene.canvas.height) % this.scene.canvas.height;
+					
+				}
+
+			}(), //Note that this function is immediately executed and returns a different function
+	
+			updateWave : function( dt, time ) {
+				this.wavePosition = Math.sin( this.scene.currTime / 500 + this.position.x / this.scene.canvas.width * 4 ) * 20;
+			},
+			
+			draw : function(dt) {	
+				
+				//Get a short variable name for convenience
+				var ctx = this.scene.context;
+				
+				ctx.beginPath();
+				ctx.fillStyle = this.color;
+				ctx.fillRect(this.position.x, this.position.y + this.wavePosition, this.size, this.size);
+			}
+
+		};
+		
+		var DotManager = function( numberOfDots, scene ) {
+		
+			this.dots = [];
+			this.numberOfDots = numberOfDots;
+			this.scene = scene;
+		
+			for(var i=0; i < numberOfDots; i++) {
+				this.dots.push( new Dot(
+					Math.random() * this.scene.canvas.width,
+					Math.random() * this.scene.canvas.height,
+					this.scene
+				));
+			}
+		
+		};
+
+		DotManager.prototype = {
+			update : function( dt ) {
+				for(var i=0; i < this.numberOfDots; i++) {
+					this.dots[i].update( dt );
+				}
+			}
+		}
+		
+		new Scene();
+		
+	</script>
+	
+</body>
+</html>

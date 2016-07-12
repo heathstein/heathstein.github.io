@@ -1,0 +1,29 @@
+.table th {
+  background-color: #2b2b2b !important;
+  color: #fff;
+}
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condense > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+  padding: 4px;
+}
+.table-condensed-xs > thead > tr > th,
+.table-condensed-xs > tbody > tr > th,
+.table-condensed-xs > tfoot > tr > th,
+.table-condensed-xs > thead > tr > td,
+.table-condensed-xs > tbody > tr > td,
+.table-condensed-xs > tfoot > tr > td {
+  padding: 1px;
+}
+.table-condensed-xs > thead > tr > th {
+  background-color: #29c7f7 !important;
+}
+.table-condensed-xs {
+  margin-bottom: 0 !important;
+}
+.table > tbody > tr.error-row {
+  background-color: #f5857c;
+}
