@@ -1363,9 +1363,20 @@ html.hidden-menu-mobile-lock {
     transform: rotate(359deg);
   }
 }
+.btn-default {
+  background-color: #fb1470 ;
+}
 label {
   font-size: 12px;
   font-weight: normal ;
+}
+.panel-primary .panel-heading {
+  background-color: #fb1470 !important;
+  border-bottom: 1px solid #000000 !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.panel-primary {
+  border: 1px solid #000000 !important;
 }
 .btn-default {
   background-color: #d7d7d7;

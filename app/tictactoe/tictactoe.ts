@@ -24,9 +24,6 @@ import {TicTacToeAI} from "./tictactoe-ai";
     </div>
 `
 
-
-
-
 })
 // componentServices: [TodoService] //IF WE DO NOT HAVE TodoService Injected Globally ex(bootstrap(MyAppComponent,  [TodoService])
 
