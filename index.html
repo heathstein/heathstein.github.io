@@ -15,8 +15,21 @@
 
     <link rel="icon" href="assets/favicon/favicon.ico">
 
+
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="app/canvas-art/Vector2.js"></script>
+
+
+   <script>
+      // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
 
 
     <!-- Libraries -->
