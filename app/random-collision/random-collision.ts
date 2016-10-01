@@ -61,7 +61,7 @@ import {Component,ElementRef,ViewChild} from '@angular/core';
     
      <div class="try">
         <div class="panel panel-primary" style="margin:0px 0px 0px 10px; height:402px" >
-        <div class="panel-heading">Dot Collision</div>
+        <div class="panel-heading">Particle Collision</div>
         <div class="panel-body">
         
         <div style="width: 180">

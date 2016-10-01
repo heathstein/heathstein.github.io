@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6b363d7-9828-4ea5-b6ef-5e4023efeb67" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/tictactoe/tictactoe.js" afterPath="$PROJECT_DIR$/app/tictactoe/tictactoe.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/tictactoe/tictactoe.js.map" afterPath="$PROJECT_DIR$/app/tictactoe/tictactoe.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/tictactoe/tictactoe.ts" afterPath="$PROJECT_DIR$/app/tictactoe/tictactoe.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/random-collision/random-collision-page.js" afterPath="$PROJECT_DIR$/app/random-collision/random-collision-page.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/random-collision/random-collision-page.js.map" afterPath="$PROJECT_DIR$/app/random-collision/random-collision-page.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/random-collision/random-collision-page.ts" afterPath="$PROJECT_DIR$/app/random-collision/random-collision-page.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/random-collision/random-collision.js" afterPath="$PROJECT_DIR$/app/random-collision/random-collision.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/random-collision/random-collision.js.map" afterPath="$PROJECT_DIR$/app/random-collision/random-collision.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/random-collision/random-collision.ts" afterPath="$PROJECT_DIR$/app/random-collision/random-collision.ts" />
     </list>
     <ignored path="heathstein.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,46 +71,46 @@
       <file leaf-file-name="random-collision-page.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/random-collision/random-collision-page.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+            <state relative-caret-position="330">
+              <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
               <folding>
                 <element signature="e#137#184#0" expanded="true" />
-                <marker date="1474224310000" expanded="false" signature="391:414" ph="..." />
-                <marker date="1474224310000" expanded="true" signature="415:619" ph="..." />
-                <marker date="1474224310000" expanded="true" signature="451:508" ph="..." />
-                <marker date="1474224310000" expanded="true" signature="541:604" ph="..." />
+                <marker date="1475340789000" expanded="false" signature="391:414" ph="..." />
+                <marker date="1475340789000" expanded="true" signature="415:640" ph="..." />
+                <marker date="1475340789000" expanded="true" signature="451:529" ph="..." />
+                <marker date="1475340789000" expanded="true" signature="562:625" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="random-collision.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="random-collision.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/random-collision/random-collision.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="122">
+              <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1474332551000" expanded="true" signature="207:863" ph="..." />
-                <marker date="1474332551000" expanded="true" signature="224:312" ph="{...}" />
-                <marker date="1474332551000" expanded="true" signature="329:434" ph="{...}" />
-                <marker date="1474332551000" expanded="true" signature="453:534" ph="{...}" />
-                <marker date="1474332551000" expanded="true" signature="553:703" ph="{...}" />
-                <marker date="1474332551000" expanded="true" signature="733:846" ph="{...}" />
-                <marker date="1474332551000" expanded="true" signature="942:2813" ph="..." />
-                <marker date="1474332551000" expanded="true" signature="1038:1085" ph="..." />
-                <marker date="1474332551000" expanded="true" signature="1123:2797" ph="..." />
-                <marker date="1474332551000" expanded="true" signature="1173:1210" ph="..." />
-                <marker date="1474332551000" expanded="true" signature="1211:2784" ph="..." />
-                <marker date="1474332551000" expanded="true" signature="1300:2769" ph="..." />
-                <marker date="1474332551000" expanded="true" signature="1331:1341" ph="..." />
-                <marker date="1474332551000" expanded="true" signature="1342:1684" ph="..." />
-                <marker date="1474332551000" expanded="true" signature="1436:1555" ph="..." />
-                <marker date="1474332551000" expanded="true" signature="1633:1668" ph="..." />
-                <marker date="1474332551000" expanded="true" signature="1766:1777" ph="..." />
-                <marker date="1474332551000" expanded="true" signature="2483:2754" ph="..." />
-                <marker date="1474332551000" expanded="true" signature="2484:2754" ph="..." />
-                <marker date="1474332551000" expanded="true" signature="2563:2730" ph="..." />
+                <marker date="1475340801000" expanded="true" signature="207:863" ph="..." />
+                <marker date="1475340801000" expanded="true" signature="224:312" ph="{...}" />
+                <marker date="1475340801000" expanded="true" signature="329:434" ph="{...}" />
+                <marker date="1475340801000" expanded="true" signature="453:534" ph="{...}" />
+                <marker date="1475340801000" expanded="true" signature="553:703" ph="{...}" />
+                <marker date="1475340801000" expanded="true" signature="733:846" ph="{...}" />
+                <marker date="1475340801000" expanded="true" signature="942:2818" ph="..." />
+                <marker date="1475340801000" expanded="true" signature="1038:1085" ph="..." />
+                <marker date="1475340801000" expanded="true" signature="1123:2802" ph="..." />
+                <marker date="1475340801000" expanded="true" signature="1173:1210" ph="..." />
+                <marker date="1475340801000" expanded="true" signature="1211:2789" ph="..." />
+                <marker date="1475340801000" expanded="true" signature="1305:2774" ph="..." />
+                <marker date="1475340801000" expanded="true" signature="1336:1346" ph="..." />
+                <marker date="1475340801000" expanded="true" signature="1347:1689" ph="..." />
+                <marker date="1475340801000" expanded="true" signature="1441:1560" ph="..." />
+                <marker date="1475340801000" expanded="true" signature="1638:1673" ph="..." />
+                <marker date="1475340801000" expanded="true" signature="1771:1782" ph="..." />
+                <marker date="1475340801000" expanded="true" signature="2488:2759" ph="..." />
+                <marker date="1475340801000" expanded="true" signature="2489:2759" ph="..." />
+                <marker date="1475340801000" expanded="true" signature="2568:2735" ph="..." />
               </folding>
             </state>
           </provider>
@@ -137,7 +141,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tictactoe.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tictactoe.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/tictactoe/tictactoe.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -199,12 +203,12 @@
         <option value="$PROJECT_DIR$/app/tictactoe/tictactoe-game.ts" />
         <option value="$PROJECT_DIR$/app/randomCollision/RandomCollision.ts" />
         <option value="$PROJECT_DIR$/app/home/home.ts" />
-        <option value="$PROJECT_DIR$/app/random-collision/random-collision-page.ts" />
         <option value="$PROJECT_DIR$/app/layout/navigation/navigation.ts" />
         <option value="$PROJECT_DIR$/app/app.routes.ts" />
-        <option value="$PROJECT_DIR$/app/random-collision/random-collision.ts" />
         <option value="$PROJECT_DIR$/app/canvas-art/canvas-art.ts" />
         <option value="$PROJECT_DIR$/app/tictactoe/tictactoe.ts" />
+        <option value="$PROJECT_DIR$/app/random-collision/random-collision-page.ts" />
+        <option value="$PROJECT_DIR$/app/random-collision/random-collision.ts" />
       </list>
     </option>
   </component>
@@ -305,7 +309,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tictactoe" />
+              <option name="myItemId" value="random-collision" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -394,16 +398,16 @@
       <updated>1468330352241</updated>
       <workItem from="1468330353851" duration="2247000" />
       <workItem from="1471824047669" duration="60371000" />
-      <workItem from="1473773658365" duration="28696000" />
+      <workItem from="1473773658365" duration="28833000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91314000" />
+    <option name="totallyTimeSpent" value="91451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24861" sideWeight="0.54657537" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -819,50 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/random-collision/random-collision-page.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-          <folding>
-            <element signature="e#137#184#0" expanded="true" />
-            <marker date="1474224310000" expanded="false" signature="391:414" ph="..." />
-            <marker date="1474224310000" expanded="true" signature="415:619" ph="..." />
-            <marker date="1474224310000" expanded="true" signature="451:508" ph="..." />
-            <marker date="1474224310000" expanded="true" signature="541:604" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/random-collision/random-collision.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1474332551000" expanded="true" signature="207:863" ph="..." />
-            <marker date="1474332551000" expanded="true" signature="224:312" ph="{...}" />
-            <marker date="1474332551000" expanded="true" signature="329:434" ph="{...}" />
-            <marker date="1474332551000" expanded="true" signature="453:534" ph="{...}" />
-            <marker date="1474332551000" expanded="true" signature="553:703" ph="{...}" />
-            <marker date="1474332551000" expanded="true" signature="733:846" ph="{...}" />
-            <marker date="1474332551000" expanded="true" signature="942:2813" ph="..." />
-            <marker date="1474332551000" expanded="true" signature="1038:1085" ph="..." />
-            <marker date="1474332551000" expanded="true" signature="1123:2797" ph="..." />
-            <marker date="1474332551000" expanded="true" signature="1173:1210" ph="..." />
-            <marker date="1474332551000" expanded="true" signature="1211:2784" ph="..." />
-            <marker date="1474332551000" expanded="true" signature="1300:2769" ph="..." />
-            <marker date="1474332551000" expanded="true" signature="1331:1341" ph="..." />
-            <marker date="1474332551000" expanded="true" signature="1342:1684" ph="..." />
-            <marker date="1474332551000" expanded="true" signature="1436:1555" ph="..." />
-            <marker date="1474332551000" expanded="true" signature="1633:1668" ph="..." />
-            <marker date="1474332551000" expanded="true" signature="1766:1777" ph="..." />
-            <marker date="1474332551000" expanded="true" signature="2483:2754" ph="..." />
-            <marker date="1474332551000" expanded="true" signature="2484:2754" ph="..." />
-            <marker date="1474332551000" expanded="true" signature="2563:2730" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/canvas-art/canvas-art.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -902,6 +862,50 @@
             <marker date="1475329934000" expanded="true" signature="1295:1511" ph="..." />
             <marker date="1475329934000" expanded="true" signature="1540:1551" ph="..." />
             <marker date="1475329934000" expanded="true" signature="1622:1631" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/random-collision/random-collision-page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding>
+            <element signature="e#137#184#0" expanded="true" />
+            <marker date="1475340789000" expanded="false" signature="391:414" ph="..." />
+            <marker date="1475340789000" expanded="true" signature="415:640" ph="..." />
+            <marker date="1475340789000" expanded="true" signature="451:529" ph="..." />
+            <marker date="1475340789000" expanded="true" signature="562:625" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/random-collision/random-collision.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1475340801000" expanded="true" signature="207:863" ph="..." />
+            <marker date="1475340801000" expanded="true" signature="224:312" ph="{...}" />
+            <marker date="1475340801000" expanded="true" signature="329:434" ph="{...}" />
+            <marker date="1475340801000" expanded="true" signature="453:534" ph="{...}" />
+            <marker date="1475340801000" expanded="true" signature="553:703" ph="{...}" />
+            <marker date="1475340801000" expanded="true" signature="733:846" ph="{...}" />
+            <marker date="1475340801000" expanded="true" signature="942:2818" ph="..." />
+            <marker date="1475340801000" expanded="true" signature="1038:1085" ph="..." />
+            <marker date="1475340801000" expanded="true" signature="1123:2802" ph="..." />
+            <marker date="1475340801000" expanded="true" signature="1173:1210" ph="..." />
+            <marker date="1475340801000" expanded="true" signature="1211:2789" ph="..." />
+            <marker date="1475340801000" expanded="true" signature="1305:2774" ph="..." />
+            <marker date="1475340801000" expanded="true" signature="1336:1346" ph="..." />
+            <marker date="1475340801000" expanded="true" signature="1347:1689" ph="..." />
+            <marker date="1475340801000" expanded="true" signature="1441:1560" ph="..." />
+            <marker date="1475340801000" expanded="true" signature="1638:1673" ph="..." />
+            <marker date="1475340801000" expanded="true" signature="1771:1782" ph="..." />
+            <marker date="1475340801000" expanded="true" signature="2488:2759" ph="..." />
+            <marker date="1475340801000" expanded="true" signature="2489:2759" ph="..." />
+            <marker date="1475340801000" expanded="true" signature="2568:2735" ph="..." />
           </folding>
         </state>
       </provider>

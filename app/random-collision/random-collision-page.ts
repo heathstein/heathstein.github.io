@@ -17,7 +17,7 @@ import {RandomCollision} from "./random-collision";
    
         <div class="panel panel-primary" style="margin:10px 0px 0px 0px">
         <div class="panel-heading">
-        <h3 class="panel-title">sdsd</h3>
+        <h3 class="panel-title">Random Particle Collision</h3>
         </div>
         <div class="panel-body">
           <random-collision></random-collision>

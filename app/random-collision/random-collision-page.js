@@ -26,7 +26,7 @@ var RandomCollisionPage = (function () {
         core_1.Component({
             selector: 'random-collision-page',
             directives: [random_collision_1.RandomCollision],
-            template: "\n   \n        <div class=\"panel panel-primary\" style=\"margin:10px 0px 0px 0px\">\n        <div class=\"panel-heading\">\n        <h3 class=\"panel-title\">sdsd</h3>\n        </div>\n        <div class=\"panel-body\">\n          <random-collision></random-collision>\n        </div>\n        </div>"
+            template: "\n   \n        <div class=\"panel panel-primary\" style=\"margin:10px 0px 0px 0px\">\n        <div class=\"panel-heading\">\n        <h3 class=\"panel-title\">Random Particle Collision</h3>\n        </div>\n        <div class=\"panel-body\">\n          <random-collision></random-collision>\n        </div>\n        </div>"
         }), 
         __metadata('design:paramtypes', [])
     ], RandomCollisionPage);
