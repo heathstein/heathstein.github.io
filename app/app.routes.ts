@@ -4,6 +4,7 @@
 import { provideRouter, RouterConfig } from '@angular/router';
 import {Home} from './home/home';
 import {TicTacToePage} from './tictactoe/tictactoe-page';
+import {RandomCollisionPage} from './random-collision/random-collision-page';
 import {CanvasArt} from './canvas-art/canvas-art';
 import {ProductRoutes} from './products/products.routes';
 import {SuperherosRoutes} from './superheros/superhero.routes';
@@ -17,6 +18,7 @@ export const routes: RouterConfig = [
     { path: 'home', component: Home },
     { path: 'particle-swarm', component: CanvasArt },
     { path: 'tictactoe', component: TicTacToePage },
+    { path: 'random-collision', component: RandomCollisionPage },
     ...ProductRoutes,
     ...SuperherosRoutes
 ];

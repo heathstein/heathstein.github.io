@@ -15,14 +15,15 @@ var core_1 = require('@angular/core');
 var todo_1 = require('../todo/todo');
 var tictactoe_1 = require('../tictactoe/tictactoe');
 var canvas_art_1 = require('../canvas-art/canvas-art');
+var random_collision_1 = require('../random-collision/random-collision');
 var Home = (function () {
     function Home() {
     }
     Home = __decorate([
         core_1.Component({
             selector: 'home',
-            directives: [todo_1.Todo, tictactoe_1.TicTacToe, canvas_art_1.CanvasArt],
-            template: "\n   <h1>Angularjs 2 Playground</h1>\n    <div class=\"row\">\n        <div class=\"pull-left\" style=\"width:70%\">\n            <canvas-art></canvas-art>\n        </div>\n        \n        <div class=\"pull-left\" style=\"width:30%\">\n            <todo-component></todo-component>\n        </div>\n    </div>\n    \n   \n   \n    <h1>Tic Tac Toe</h1>\n    <tic-tac-toe></tic-tac-toe>\n    # Install Typings CLI utility.\n    npm install typings --global\n    # Search for definitions.\n    typings search tape\n    # Find an available definition (by name).\n    typings search --name react\n    "
+            directives: [todo_1.Todo, tictactoe_1.TicTacToe, canvas_art_1.CanvasArt, random_collision_1.RandomCollision],
+            template: "\n   <h1>Angularjs 2 Playground</h1>\n    <div class=\"row\">\n        <div class=\"pull-left\" style=\"width:70%\">\n            <canvas-art></canvas-art>\n        </div>\n        \n        <div class=\"pull-left\" style=\"width:30%\">\n            <todo-component></todo-component>\n        </div>\n        \n    \n        \n    </div>\n    \n   \n   \n    <h1>Tic Tac Toe</h1>\n    <tic-tac-toe></tic-tac-toe>\n    \n    \n        <random-collision></random-collision>\n   \n    "
         }), 
         __metadata('design:paramtypes', [])
     ], Home);

@@ -5,11 +5,12 @@ import {Component,provide,EventEmitter} from '@angular/core';
 import {Todo} from '../todo/todo';
 import {TicTacToe} from '../tictactoe/tictactoe';
 import {CanvasArt} from '../canvas-art/canvas-art';
+import {RandomCollision} from '../random-collision/random-collision';
 
 
 @Component({
     selector: 'home',
-    directives: [Todo,TicTacToe,CanvasArt],
+    directives: [Todo,TicTacToe,CanvasArt,RandomCollision],
     template: `
    <h1>Angularjs 2 Playground</h1>
     <div class="row">
@@ -20,18 +21,19 @@ import {CanvasArt} from '../canvas-art/canvas-art';
         <div class="pull-left" style="width:30%">
             <todo-component></todo-component>
         </div>
+        
+    
+        
     </div>
     
    
    
     <h1>Tic Tac Toe</h1>
     <tic-tac-toe></tic-tac-toe>
-    # Install Typings CLI utility.
-    npm install typings --global
-    # Search for definitions.
-    typings search tape
-    # Find an available definition (by name).
-    typings search --name react
+    
+    
+        <random-collision></random-collision>
+   
     `
 })
 export class Home {

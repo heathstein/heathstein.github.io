@@ -4,7 +4,7 @@
 
 
 export class TicTacToeModel{
-    constructor(public value:string = "", public active:boolean = true){
+    constructor(public value:string = "", public active:boolean = true, public status:string = ''){
     }
 }
 

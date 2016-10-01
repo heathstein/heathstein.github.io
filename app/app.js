@@ -21,7 +21,6 @@ var app_routes_1 = require('./app.routes');
 var core_2 = require('@angular/core');
 var MyAppComponent = (function () {
     function MyAppComponent() {
-        console.log("Header", header_1.Header);
         //console.log();
     }
     MyAppComponent = __decorate([

@@ -3,11 +3,13 @@
  */
 "use strict";
 var TicTacToeModel = (function () {
-    function TicTacToeModel(value, active) {
+    function TicTacToeModel(value, active, status) {
         if (value === void 0) { value = ""; }
         if (active === void 0) { active = true; }
+        if (status === void 0) { status = ''; }
         this.value = value;
         this.active = active;
+        this.status = status;
     }
     return TicTacToeModel;
 }());

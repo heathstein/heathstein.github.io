@@ -6,21 +6,38 @@
  */
 import {Component,Inject} from "@angular/core";
 import {TicTacToeGame} from "./tictactoe-game";
-import {TicTacToeAI} from "./tictactoe-ai";
 
 @Component({
     selector:'tic-tac-toe',
     directives: [],
+    styles: [`
+    .winner {
+      background-color: #33cc33 !important;
+    }
+    .loser{
+      background-color: #fb143a !important;
+    }
+    .status{
+    padding:10px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #33cc33;
+    margin-bottom:3px;
+    }
+   `],
     template:`
     <div class="tictactoe">
-    <div class="status">{{ticTacToeGame.results.status}}</div>
-    <select [(ngModel)]="ticTacToeGame.skillLevel">
-        <option [value]="i.level" *ngFor="#i of ticTacToeGame.skillLevels">{{i.label}}</option>
-    </select>
+    <div class="status" >{{ticTacToeGame.results.status}}</div>
+      <select [(ngModel)]="ticTacToeGame.skillLevel" (ngModelChange)="toNumber()">
+        <option [value]="i.level" *ngFor="let i of ticTacToeGame.skillLevels">{{i.label}}</option>
+      </select>
     <button  class="btn btn-default" (click)="startGame()">Start Game</button>
     <div class="score-board">{{ticTacToeGame.playerLabel}}</div>
-             <div class="tac-container"><div [ngClass]="{active: cell.active}" *ngFor="#cell of ticTacToeGame.cells; #i = index" (click)="makeMove(i)">{{ cell.value }}</div>
+             <div ng-style="{'background-color': cell.color}" class="tac-container"><div [ngClass]="{active: cell.active , winner: cell.status == 'winner', loser: cell.status == 'loser'} " *ngFor="let cell of ticTacToeGame.cells; let i = index" (click)="makeMove(i)">{{ cell.value }}</div>
     </div>
+    <div>Player: <b style="color:green">{{ticTacToeGame.winsPlayer1}}</b></div>
+    <div>Computer: <b style="color:red">{{ticTacToeGame.winsPlayer2}}</b></div>
+    <div>Cat: {{ticTacToeGame.cat}}</div>
     </div>
 `
 
@@ -38,21 +55,24 @@ export class TicTacToe{
 ///public todoService:TodoService
     constructor() {
         this.ticTacToeGame = new TicTacToeGame();
+        this.startGame();
      }
 
     makeMove(_index){
         this.ticTacToeGame.makePlayerMove(_index);
     }
 
+    toNumber(){
+        this.ticTacToeGame.skillLevel = +this.ticTacToeGame.skillLevel;
+
+    }
 
     startGame(){
         this.ticTacToeGame.startGame();
-        console.log("test sasdsa")
     }
 
-    setSkillLevel($event){
-        console.log($event);
-    }
+
+
 
 
 }

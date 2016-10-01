@@ -27,7 +27,7 @@ import {Component,provide,EventEmitter,HostListener,ElementRef,ViewChild} from '
     
     
         <div class="panel panel-primary" style="margin:0px 0px 0px 10px; height:402px" >
-        <div class="panel-heading">Swarm Controles</div>
+        <div class="panel-heading">Swarm Controls</div>
         <div class="panel-body">
                
               

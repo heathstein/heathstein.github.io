@@ -26,7 +26,6 @@ import {enableProdMode} from '@angular/core';
 
 class MyAppComponent {
   constructor() {
-    console.log("Header"  , Header);
     //console.log();
   }
 
