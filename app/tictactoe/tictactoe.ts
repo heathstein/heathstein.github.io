@@ -26,12 +26,15 @@ import {TicTacToeGame} from "./tictactoe-game";
     }
    `],
     template:`
-    <div class="tictactoe">
-    <div class="status" >{{ticTacToeGame.results.status}}</div>
-      <select [(ngModel)]="ticTacToeGame.skillLevel" (ngModelChange)="toNumber()">
-        <option [value]="i.level" *ngFor="let i of ticTacToeGame.skillLevels">{{i.label}}</option>
+    <div class="tictactoe">{{ticTacToeGame.results | json}}
+    <div class="status" *ngIf="ticTacToeGame.results.status.length" >{{ticTacToeGame.results.status}}</div>
+      <div class="container" >
+      <select style="width:150px" class="form-control pull-left input-sm" [(ngModel)]="ticTacToeGame.skillLevel" (ngModelChange)="toNumber()">
+        <option  [value]="i.level" *ngFor="let i of ticTacToeGame.skillLevels">{{i.label}}</option>
       </select>
-    <button  class="btn btn-default" (click)="startGame()">Start Game</button>
+     <button style="margin-left:10px" class="btn btn-info pull-left" (click)="startGame()">Start Game</button>
+     </div>
+     
     <div class="score-board">{{ticTacToeGame.playerLabel}}</div>
              <div ng-style="{'background-color': cell.color}" class="tac-container"><div [ngClass]="{active: cell.active , winner: cell.status == 'winner', loser: cell.status == 'loser'} " *ngFor="let cell of ticTacToeGame.cells; let i = index" (click)="makeMove(i)">{{ cell.value }}</div>
     </div>
