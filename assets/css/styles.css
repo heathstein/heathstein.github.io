@@ -1,68 +1,3 @@
-@font-face {
-  font-family: arial;
-  src: url("../fonts/GEInspRg.eot") format("eot");
-  src: url("../fonts/GEInspRg.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/GEInspRg.woff") format("woff"), /* Modern Browsers */ url("../fonts/GEInspRg.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  /* IE9 Compat Modes */
-  /* Safari, Android, iOS */
-}
-@font-face {
-  font-family: arial;
-  src: url("../fonts/GEInspIt.eot") format("eot");
-  src: url("../fonts/GEInspIt.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/GEInspIt.woff") format("woff"), url("../fonts/GEInspIt.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-  /* IE9 Compat Modes */
-}
-@font-face {
-  font-family: arial;
-  src: url("../fonts/GEInspMd.eot") format("eot");
-  src: url("../fonts/GEInspMd.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/GEInspMd.woff") format("woff"), url("../fonts/GEInspMd.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  /* IE9 Compat Modes */
-}
-@font-face {
-  font-family: arial;
-  src: url("../fonts/GEInspIt.eot") format("eot");
-  src: url("../fonts/GEInspIt.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/GEInspIt.woff") format("woff"), url("../fonts/GEInspIt.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
-  /* IE9 Compat Modes */
-}
-@font-face {
-  font-family: arial;
-  src: url("../fonts/MetaSerifPro-Book.eot") format("eot");
-  src: url("../fonts/MetaSerifPro-Book.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/MetaSerifPro-Book.woff") format("woff"), url("../fonts/MetaSerifPro-Book.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  /* IE9 Compat Modes */
-}
-@font-face {
-  font-family: arial;
-  src: url("../fonts/MetaSerifPro-BookIta.eot") format("eot");
-  src: url("../fonts/MetaSerifPro-BookIta.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/MetaSerifPro-BookIta.woff") format("woff"), url("../fonts/MetaSerifPro-BookIta.otf") format("opentype");
-  font-weight: normal;
-  font-style: italic;
-  /* IE9 Compat Modes */
-}
-@font-face {
-  font-family: arial;
-  src: url("../fonts/MetaSerifPro-Medi.eot") format("eot");
-  src: url("../fonts/MetaSerifPro-Medi.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/MetaSerifPro-Medi.woff") format("woff"), url("../fonts/MetaSerifPro-Medi.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
-  /* IE9 Compat Modes */
-}
-@font-face {
-  font-family: arial;
-  src: url("../fonts/MetaSerifPro-MediIta.eot") format("eot");
-  src: url("../fonts/MetaSerifPro-MediIta.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/MetaSerifPro-MediIta.woff") format("woff"), url("../fonts/MetaSerifPro-MediIta.otf") format("opentype");
-  font-weight: bold;
-  font-style: italic;
-  /* IE9 Compat Modes */
-}
 .alert-holder {
   position: fixed;
   width: 100%;
@@ -227,6 +162,8 @@
 .header {
   width: 100%;
   background-color: #ffcb52;
+  -webkit-box-shadow: 0 2px 2px 0 #333333;
+  box-shadow: 0 2px 2px 0 #333333;
 }
 .nav-open .main-panel {
   margin-left: 220px;
@@ -246,8 +183,10 @@
   margin: 0 ;
   z-index: 1102 ;
 }
-.fixed-header .gt-body-container {
-  padding-top: 44px;
+.fixed-header .body-container {
+  padding-top: 54px;
+  padding-left: 44px;
+  padding-right: 44px;
 }
 .fixed-header .nav-panel {
   position: fixed;
@@ -342,7 +281,7 @@
 .header .header-container .gt-user-drop-toggle {
   width: 172px;
   height: 44px;
-  background: #2b2b2b;
+  background: #4c4c4f;
 }
 .header .header-container .gt-user-drop:hover {
   background: #0d0d0d;
@@ -358,13 +297,13 @@
   margin-top: 9px;
   margin-left: 10px;
   text-align: right;
-  background-color: #cccccc;
 }
 .header .header-container .gt-user-drop .gt-display-name span {
   color: #edeeef;
 }
 .header .header-container .gt-user-drop .gt-avatar img {
   height: 44px;
+  background-color: #000000;
 }
 .header .header-container .gt-header-search {
   height: 44px;
@@ -394,6 +333,8 @@
   margin-left: 15px;
   height: 44px;
   cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
 }
 .header .header-container .gt-header-nav li a {
   color: #d7d7d7;
@@ -866,30 +807,101 @@
 .color-background-white {
   background-color: #fff !important;
 }
-.ge-logo {
-  background: transparent url("../brandkit/img/ge-monogram-athensgray.svg") no-repeat;
-  background-size: contain;
-  border: 0;
+hr {
+  margin: 10px 0px 10px 0px !important;
+}
+input[type=range] {
+  /*removes default webkit styles*/
+  -webkit-appearance: none;
+  /*fix for FF unable to apply focus style bug */
+  border: 1px solid white;
+  /*required for proper track sizing in FF*/
+  width: 300px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: goldenrod;
+  margin-top: -4px;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+input[type=range]::-moz-range-track {
+  width: 300px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: goldenrod;
+}
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring {
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+input[type=range]::-ms-track {
+  width: 300px;
+  height: 5px;
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 6px 0;
+  /*remove default tick marks*/
   color: transparent;
-  float: left;
-  font: 0/0 a;
-  height: 38px;
-  margin: -8px 9px -10px -3px;
-  width: 37px;
+}
+input[type=range]::-ms-fill-lower {
+  background: #777;
+  border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+  background: #ddd;
+  border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: goldenrod;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #888;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #ccc;
 }
 .particle-container {
   position: relative;
   height: 400px;
 }
-.particle-container .tool-try {
+.particle-container .try {
   width: 200px;
   height: 402px;
-  background: #4c4f4f;
   position: absolute;
   top: 0px;
   left: 600px;
 }
-
 canvas {
   border: 1px solid #000000;
   top: 0px;
@@ -1355,6 +1367,21 @@ html.hidden-menu-mobile-lock {
   }
 }
 .btn-default {
+  background-color: #fb1470 ;
+}
+label {
+  font-size: 12px;
+  font-weight: normal ;
+}
+.panel-primary .panel-heading {
+  background-color: #fb1470 !important;
+  border-bottom: 1px solid #000000 !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.panel-primary {
+  border: 1px solid #000000 !important;
+}
+.btn-default {
   background-color: #d7d7d7;
 }
 .btn-primary {
@@ -1523,11 +1550,14 @@ hr {
   width: 132px;
   height: 132px;
   border: 3px solid #F8FFFF;
-  font-size: 50px;
+  font-size: 85px;
   vertical-align: middle;
   padding: 0;
   color: #ffffff;
   text-align: center;
+  -webkit-transition: width 1s, height 1s, background-color 1s, -webkit-transform 1s;
+  transition: width 1s, height 1s, background-color 1s, transform 1s;
+  cursor: pointer;
 }
 .tictactoe .tac-container div.active {
   cursor: pointer;

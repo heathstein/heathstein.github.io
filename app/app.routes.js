@@ -6,8 +6,9 @@ var router_1 = require('@angular/router');
 var home_1 = require('./home/home');
 var tictactoe_page_1 = require('./tictactoe/tictactoe-page');
 var random_collision_page_1 = require('./random-collision/random-collision-page');
-var canvas_art_1 = require('./canvas-art/canvas-art');
+var canvas_art_page_1 = require('./canvas-art/canvas-art-page');
 var products_routes_1 = require('./products/products.routes');
+var exploded_tiles_1 = require('./exploded-tiles/exploded-tiles');
 var superhero_routes_1 = require('./superheros/superhero.routes');
 exports.routes = [
     {
@@ -16,7 +17,8 @@ exports.routes = [
         pathMatch: 'full'
     },
     { path: 'home', component: home_1.Home },
-    { path: 'particle-swarm', component: canvas_art_1.CanvasArt },
+    { path: 'particle-swarm', component: canvas_art_page_1.CanvasArtPage },
+    { path: 'exploded-tiles', component: exploded_tiles_1.ExplodedTiles },
     { path: 'tictactoe', component: tictactoe_page_1.TicTacToePage },
     { path: 'random-collision', component: random_collision_page_1.RandomCollisionPage }
 ].concat(products_routes_1.ProductRoutes, superhero_routes_1.SuperherosRoutes);

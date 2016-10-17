@@ -11,12 +11,20 @@ import {TicTacToeGame} from "./tictactoe-game";
     selector:'tic-tac-toe',
     directives: [],
     styles: [`
-    .winner {
-      background-color: #33cc33 !important;
+    .tie {
+      background-color: #0e97cb !important;
     }
     .loser{
       background-color: #fb143a !important;
     }
+    
+    .tictactoe .container{
+        margin:0px !important;
+        padding:0px; !important;
+    }
+  
+    
+    
     .status{
     padding:10px;
     -webkit-border-radius: 4px;
@@ -24,10 +32,12 @@ import {TicTacToeGame} from "./tictactoe-game";
     background-color: #33cc33;
     margin-bottom:3px;
     }
+    
+    
    `],
     template:`
-    <div class="tictactoe">{{ticTacToeGame.results | json}}
-    <div class="status" *ngIf="ticTacToeGame.results.status.length" >{{ticTacToeGame.results.status}}</div>
+    <div class="tictactoe">
+    <div class="status" [ngClass]="{loser: ticTacToeGame.results.winner == 0, tie: ticTacToeGame.results.winner == null } " *ngIf="ticTacToeGame.results.status.length" >{{ticTacToeGame.results.status}}</div>
       <div class="container" >
       <select style="width:150px" class="form-control pull-left input-sm" [(ngModel)]="ticTacToeGame.skillLevel" (ngModelChange)="toNumber()">
         <option  [value]="i.level" *ngFor="let i of ticTacToeGame.skillLevels">{{i.label}}</option>

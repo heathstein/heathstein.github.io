@@ -21,6 +21,9 @@ import {Component,provide,EventEmitter,HostListener,ElementRef,ViewChild} from '
      margin-top:8px;
      }
     </style>
+    
+    
+    
     <div class="particle-container" #parentElm id="peParentElement">
     <canvas #myImg id="canvas-art" #canvasElem  (mousedown)="toggleAttract()" (mousemove)="mouseMove($event)" width="600" height="400"></canvas>
     <div class="try">

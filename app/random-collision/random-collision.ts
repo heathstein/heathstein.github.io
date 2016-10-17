@@ -43,8 +43,6 @@ import {Component,ElementRef,ViewChild} from '@angular/core';
     }
     
     
-    
-    
     .wins{
         margin:12px 0px 0px 0px;
         display:block;
@@ -54,8 +52,8 @@ import {Component,ElementRef,ViewChild} from '@angular/core';
     
     </style>
     
-    
-    <div class="particle-container" #parentElm id="peParentElement">
+
+    <div class="particle-container"  #parentElm id="peParentElement">
     
     <canvas #myImg id="collision-container" #canvasElem  width="600" height="400" style="border:1px solid #000000; background-color:#000"></canvas>
     
@@ -79,7 +77,7 @@ import {Component,ElementRef,ViewChild} from '@angular/core';
          
         <span class="label" style="color: #000">Games Left:</span> <span class="label label-danger" >{{numToRun -numRun}}</span>
         
-              <label>Games to run: {{numToRun}}</label>
+              <label>Games to run:</label>
               <input (change)="onChange()"  [(ngModel)]="numToRun" name="numVal" min="1" max="100" type="range"  >
                
         
